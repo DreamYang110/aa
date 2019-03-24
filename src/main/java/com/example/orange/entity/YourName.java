@@ -2,10 +2,14 @@ package com.example.orange.entity;
 
 public class YourName {
     private String name;
+    private String address;
 
-    public YourName(){}
-    public YourName(String name) {
+    public YourName() {
+    }
+
+    public YourName(String name, String address) {
         this.name = name;
+        this.address = address;
     }
 
 
@@ -15,5 +19,13 @@ public class YourName {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
     }
 }
